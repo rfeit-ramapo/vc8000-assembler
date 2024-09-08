@@ -1,0 +1,17 @@
+;this is a test for the VC8000
+        org    100
+hi     read    0, x;this comment is immediately after statement
+        load    1,x
+        multr   1, 1
+hay   store   1,y ; This is the another comment.
+         write    0,y
+         load     2, x
+         bp      2,hi
+         halt
+    ;test comment
+x       dc      -5
+y       ds      99
+b       dc      555
+a       dc      100
+         end
+         ;test
